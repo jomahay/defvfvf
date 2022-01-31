@@ -1,0 +1,5 @@
+angular:
+- angularFO_Rindra_dev, angularFO_Rilah_dev, angularFO_Joh_dev, angularFO_trunk, angularFO_master
+- angularBO_Rindra_dev, angularBO_Rilah_dev, angularBO_Joh_dev, angularBO_trunk, angularBO_master
+
+androidRilahDev, ..., androidTrunk, androidMaster d oatr zay ko am c#
