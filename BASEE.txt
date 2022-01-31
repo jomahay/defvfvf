@@ -1,0 +1,39 @@
+create table utilisateur(
+   idutilisateur INT NOT NULL AUTO_INCREMENT,
+   nom VARCHAR(100) NOT NULL,
+   login VARCHAR(100) NOT NULL,
+   mdp VARCHAR(100) NOT NULL,
+   typeutilisateur VARCHAR(100) NOT NULL,
+   PRIMARY KEY (idutilisateur)
+);
+create table article(
+   idarticle INT NOT NULL AUTO_INCREMENT,
+   codearticle VARCHAR(100) NOT NULL,
+   nomarticle VARCHAR(100) NOT NULL,
+   PRIMARY KEY (idarticle)
+);
+
+CREATE TABLE commande (
+    idcommande int NOT NULL AUTO_INCREMENT,
+    nomcommandeur VARCHAR(100) NOT NULL,
+    direction VARCHAR(100) NOT NULL,
+    idutilisateur int not null,
+    idarticle int not null,
+    quantitecommande int,
+    etatcommande int,
+    etatenstock int,
+    motif VARCHAR(100),
+    PRIMARY KEY (idcommande),
+    FOREIGN KEY (idutilisateur) REFERENCES utilisateur(idutilisateur),
+    FOREIGN KEY (idarticle) REFERENCES article(idarticle)
+); 
+create table mouvement(
+    idmouvement int NOT NULL AUTO_INCREMENT,
+    idarticle int not null,
+    stockActuel int,
+    quantite int,
+    type VARCHAR(100),
+    datemouvement timestamp, 
+    PRIMARY KEY (idmouvement),
+    FOREIGN KEY (idarticle) REFERENCES article(idarticle)  
+);

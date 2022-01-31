@@ -1,0 +1,16 @@
+select * from userProfile_itu_oracle_ONS_H_EXT where id >3;
+possible : OUI ou NON
+=>oui
+insert into userProfile_itu_oracle_ONS_H_EXT values (...);
+possible : OUI ou NON
+=>non
+Les tables externes existent depuis que le big data est en vogue : OUI ou NON
+=>ef ela table externe ,donc non
+- Mobile, NFC
+- Manipulation ana données : elastic search, prediction, big data, ML
+- IoT
+Conception sy architecture 
+Miampy pilotage zany 
+Dia le zavatra ray niapportenl
+
+Mapiakatra n note anla kokoa zany raha hoe en tant que PO na CDP ela tao amle projet, zany hoe nanao conception sy pilotage fa tsy votery ela no ndev ny majeure partie an’ilay izy fa misy zavatra ray niapportenla fotsiny en tant que hoe ndirige anle projet. Mety hoe ela no nanao anle endpt an elastic search ohatra fa ny hafa dev teo ambany pilotage anla
